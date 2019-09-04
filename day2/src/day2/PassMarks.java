@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.Scanner;
 
 
-public class passmarks {
+public class PassMarks {
 boolean ispass(int marks)
 {
 	if(marks>=40)
@@ -31,13 +31,13 @@ public String markGrade(int mark)
 }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(System.in);
-		passmarks ps=new passmarks();
-		int ma;
+		Scanner scanner=new Scanner(System.in);
+		PassMarks ps=new PassMarks();
+		int marks;
 		String result;
 		System.out.println("enter the marks");
-		ma=sc.nextInt();
-		result=ps.markGrade(ma);
+		marks=scanner.nextInt();
+		result=ps.markGrade(marks);
 		System.out.println("the result is Grade "+result);
 		
 		
